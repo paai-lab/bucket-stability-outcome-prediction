@@ -7,7 +7,12 @@ For trace bucketing, following techniques are used:
 For sequence encoding, following technique is used:
 * Index-based encoding
 
-Then, this paper uses stability_calculator.py to calculate three quality metrics as in below:
+The experiment is conducted using three classifiers:
+* Random forest (RF)
+* Gradient Boosting Machine (GBM)
+* Extreme Gradient Boosting (XGB)
+
+Based on predicted probabilities and performance from the above classifiers, this paper uses stability_calculator.py to calculate three quality metrics as in below:
 * Overall bucket performance (OBP)
 * Intra-bucket prediction stability (IBS)
 * Cross-bucket performance stability (XBS)
